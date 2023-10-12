@@ -1,4 +1,5 @@
 *.log
 *.docx
 *.txt
+*.db
 upload/
