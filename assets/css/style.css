@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    /* height: 100px; */
+}
+
+#logo {
+    width: 40px;
+    object-fit: cover;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.brand {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
