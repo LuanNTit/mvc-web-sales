@@ -18,7 +18,7 @@
     <div class="container d-flex flex-wrap justify-content-center">
         <a href="/"
             class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-            <img id="logo" src="picture/logo.png" />
+            <img id="logo" src="<?php echo _WEB_ROOT ?>/public/assets/clients/images/logo.png" />
             <span class="fs-4">He thong ban hang</span>
         </a>
         <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
