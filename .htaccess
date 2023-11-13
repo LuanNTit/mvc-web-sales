@@ -1,0 +1,7 @@
+RewriteEngine On
+# Cho nay la duong dan chinh cua thu muc lam viec (http://localhost/) => RewriteBase
+# Neu thu muc la http://localhost/blog/ => RewriteBase/Blog/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php/$1 [L,QSA]
