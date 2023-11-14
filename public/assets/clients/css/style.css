@@ -21,6 +21,7 @@ header {
 img {
     object-fit: cover;
     width: 100%;
+    max-width: 175px;
 }
 
 .brand {
@@ -28,3 +29,24 @@ img {
     height: 24px;
     object-fit: cover;
 }
+/* Cart */
+.heading {
+    text-align: left !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.img-cart {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#datarow {
+    line-height: 147px;
+}
+
+
+/* Cart */
