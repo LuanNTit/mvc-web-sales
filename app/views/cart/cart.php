@@ -1,5 +1,5 @@
 <main role="main" class="main-page">
-    <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+    <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là content -->
     <div class="container mt-4">
         <div id="thongbao" class="alert alert-danger d-none face" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -35,7 +35,7 @@
                             <td class="text-right">11,800,000.00</td>
                             <td class="text-right">23,600,000</td>
                             <td>
-                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính sp_ma -->
                                 <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
                                     <i class="fa fa-trash" aria-hidden="true"></i> Xóa
                                 </a>
@@ -53,7 +53,7 @@
                             <td class="text-right">2,699,000.00</td>
                             <td class="text-right">1,0796,000</td>
                             <td>
-                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính sp_ma -->
                                 <a id="delete_2" data-sp-ma="6" class="btn btn-danger btn-delete-sanpham">
                                     <i class="fa fa-trash" aria-hidden="true"></i> Xóa
                                 </a>
@@ -71,7 +71,7 @@
                             <td class="text-right">1,4990,000.00</td>
                             <td class="text-right">119,920,000</td>
                             <td>
-                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính sp_ma -->
                                 <a id="delete_3" data-sp-ma="4" class="btn btn-danger btn-delete-sanpham">
                                     <i class="fa fa-trash" aria-hidden="true"></i> Xóa
                                 </a>
