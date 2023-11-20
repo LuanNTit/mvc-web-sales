@@ -79,3 +79,6 @@ a {
 }
 
 /* Home */
+.fix-banner {
+    height: 100%;
+}

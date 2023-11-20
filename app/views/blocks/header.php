@@ -17,7 +17,7 @@
     <header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
         <div class="col-md-3 mb-2 mb-md-0">
             <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                <img id="logo" src="http://localhost:8080/mvc-web-sales/public/assets/clients/images/logo.png">
+                <img id="logo" src="<?php echo _WEB_ROOT ?>/public/assets/clients/images/logo.png">
                 <span class="fs-4">He thong ban hang</span>
             </a>
         </div>
