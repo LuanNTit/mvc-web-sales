@@ -68,7 +68,18 @@
                                     </div>
                                 </td>
                                 <td>Apple iPhone 5 16GB White</td>
-                                <td class="text-right">8</td>
+                                <td class="text-right">
+                                    <!-- <div class="buy__amount">
+                                        <button class="btn__minus">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                        <input type="text" name="amount" id="amount">
+                                        <button class="btn__plus">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div> -->
+                                    2
+                                </td>
                                 <td class="text-right">1,4990,000.00</td>
                                 <td class="text-right">119,920,000</td>
                                 <td>
