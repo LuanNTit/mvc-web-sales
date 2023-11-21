@@ -120,12 +120,14 @@
         <div class="d-flex justify-content-center mt-3"> <span class="text text-center">Finding Best Products Now<br> in Your Fingertips</span> </div>
         <div class="row mt-2 g-4">
             <div class="col-md-3">
-                <div class="card p-1">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Mobile</span> <span>Phones</span> </div>
-                        <div> <img src="https://i.imgur.com/b9zkoz0.jpg" height="100" width="100" /> </div>
+                <a href="<?php echo _WEB_ROOT ?>/san-pham">
+                    <div class="card p-1">
+                        <div class="d-flex justify-content-between align-items-center p-2">
+                            <div class="flex-column lh-1 imagename"> <span>Mobile</span> <span>Phones</span> </div>
+                            <div> <img src="https://i.imgur.com/b9zkoz0.jpg" height="100" width="100" /> </div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-3">
                 <div class="card p-2">
@@ -196,7 +198,7 @@
                     <div class="col-md-3 col-sm-6 mb-4">
                         <div class="product-grid">
                             <div class="product-image">
-                                <a href="#" class="image">
+                                <a href="<?php echo _WEB_ROOT ?>/san-pham/san-pham-1" class="image">
                                     <img src="<?php echo _WEB_ROOT ?>/public/assets/clients/images/product-suggest1.jpg">
                                 </a>
                                 <span class="product-discount-label">-23%</span>

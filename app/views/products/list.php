@@ -19,20 +19,22 @@
                     </div>
                     <div class="row">
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/san-pham-1">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$199</s> $99</i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
                             <div class="card h-100 border-0">
