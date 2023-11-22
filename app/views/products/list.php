@@ -37,6 +37,7 @@
                             </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
+                        <a href="<?php echo _WEB_ROOT ?>/san-pham/san-pham-2">
                             <div class="card h-100 border-0">
                                 <div class="card-img-top">
                                     <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
