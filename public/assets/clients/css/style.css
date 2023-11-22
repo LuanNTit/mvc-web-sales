@@ -64,6 +64,17 @@ img {
     line-height: 147px;
 }
 
+.minus, .plus {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.num {
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+
 /* login */
 .icon-fix {
     font-size: 1.6rem;
@@ -72,6 +83,10 @@ img {
 .des-cart {
     height: 400px;
 }
+
+
+
+
 
 /* product list */
 a {
