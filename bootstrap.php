@@ -15,6 +15,7 @@
     define("_WEB_ROOT", $web_root);
 
     require_once('configs/routes.php');
+    require_once('core/Route.php');
     require_once("app/app.php"); // load app
     require_once('core/Controller.php'); // load base controller
 ?>
