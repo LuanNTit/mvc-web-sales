@@ -31,7 +31,11 @@
                                 </div>
                             </td>
                             <td>Apple Ipad 4 Wifi 16GB</td>
-                            <td class="text-right">2</td>
+                            <td class="text-right">
+                                <span class="minus">-</span>
+                                <span class="num">1</span>
+                                <span class="plus">+</span>
+                            </td>
                             <td class="text-right">11,800,000.00</td>
                             <td class="text-right">23,600,000</td>
                             <td>
@@ -49,7 +53,11 @@
                                 </div>
                             </td>
                             <td>Nokia Asha 311</td>
-                            <td class="text-right">4</td>
+                            <td class="text-right">
+                                <span class="minus">-</span>
+                                <span class="num">1</span>
+                                <span class="plus">+</span>
+                            </td>
                             <td class="text-right">2,699,000.00</td>
                             <td class="text-right">1,0796,000</td>
                             <td>
@@ -67,7 +75,11 @@
                                 </div>
                             </td>
                             <td>Apple iPhone 5 16GB White</td>
-                            <td class="text-right">8</td>
+                            <td class="text-right">
+                                <span class="minus">-</span>
+                                <span class="num">1</span>
+                                <span class="plus">+</span>
+                            </td>
                             <td class="text-right">1,4990,000.00</td>
                             <td class="text-right">119,920,000</td>
                             <td>
