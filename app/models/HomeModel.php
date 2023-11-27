@@ -8,9 +8,14 @@ class HomeModel {
 
     public function getList() {
         $data = [
-            'Item 1',
-            'Item 2',
-            'Item 3'
+            [
+                "name" => "Thời Trang Nam",
+                "url_img" => _WEB_ROOT."/public/assets/clients/images/category1.png"
+            ],
+            [
+                "name" => "Thời Trang Nữ",
+                "url_img" => _WEB_ROOT."/public/assets/clients/images/category2.jpg"
+            ]
         ];
         return $data;
     }

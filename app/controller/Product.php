@@ -10,7 +10,6 @@
             $dataProduct = $product->getProductLists();
             
             $title = 'Danh sach san pham';
-            $this->data['sub_content']['page_title'] = $title;
             $this->data['page_title'] = $title;
             $this->data['sub_content']['product_list'] = $dataProduct;
             $this->data['content'] = 'products/list';

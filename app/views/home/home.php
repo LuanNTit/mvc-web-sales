@@ -123,8 +123,8 @@
                 <a href="<?php echo _WEB_ROOT ?>/san-pham">
                     <div class="card p-1">
                         <div class="d-flex justify-content-between align-items-center p-2">
-                            <div class="flex-column lh-1 imagename"> <span>Mobile</span> <span>Phones</span> </div>
-                            <div> <img src="https://i.imgur.com/b9zkoz0.jpg" height="100" width="100" /> </div>
+                            <div class="flex-column lh-1 imagename"> <span><?php print_r($data["product_list"][0]["name"]); ?></span> </div>
+                            <div> <img src="<?php print_r($data["product_list"][0]["url_img"]) ?>" height="100" width="100" /> </div>
                         </div>
                     </div>
                 </a>
@@ -132,8 +132,8 @@
             <div class="col-md-3">
                 <div class="card p-2">
                     <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Head</span> <span>Phones</span> </div>
-                        <div> <img src="https://i.imgur.com/SHWASPG.png" height="100" width="100" /> </div>
+                        <div class="flex-column lh-1 imagename"> <span><?php print_r($data["product_list"][1]["name"]); ?></span> </div>
+                        <div> <img src="<?php print_r($data["product_list"][1]["url_img"]) ?>" height="100" width="100" /> </div>
                     </div>
                 </div>
             </div>

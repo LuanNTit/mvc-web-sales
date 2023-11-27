@@ -6,10 +6,15 @@
             $this->model_home = $this->model("HomeModel");            
         }
         public function index() {
-            // require_once _DIR_ROOT.'/app/view/home.php';
+            // require_once _DIR_ROOT.'/app/view/home.php';s
             $title = "Trang home";
             $dataHome = $this->model_home->getList();
             $this->data['sub_content']['product_list'] = $dataHome;
+            
+            // echo "<pre>";
+            // print_r($this->data['sub_content']['product_list']);
+            // echo "</pre>";
+
             $this->data['page_title'] = $title;
             $this->data['content'] = 'home/home';
             $this->render("layouts/client_layout", $this->data);
