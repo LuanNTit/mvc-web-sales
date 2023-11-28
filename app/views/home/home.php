@@ -53,7 +53,7 @@
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-3">
                 <img class="img-thumbnail img-category" src="<?php print_r($data['categories_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][2]['name']) ?></h2>
+                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][3]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 

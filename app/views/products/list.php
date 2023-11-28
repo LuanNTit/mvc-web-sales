@@ -1,4 +1,4 @@
-<main class="main-page">
+<main class="bg-body-tertiary pb-4">
     <div class="container pt-5">
         <div class="row">
             <div class="col-md-8 order-md-2 col-lg-9">
