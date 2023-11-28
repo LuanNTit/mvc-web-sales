@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #f2ab3a;
+    --title-color: #F28E3A;
+}
+
 * {
     box-sizing: border-box;
     /* border: 1px solid; */
@@ -8,34 +13,38 @@ body {
     padding: 0;
 }
 
-/* Header */
-
-header {
-    width: 100%;
-    /* height: 100px; */
+.title-color {
+    color: var(--title-color);
 }
 
-/* use main page */
+/* Start Header */
+
+.ntl-top {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
 .main-page {
     background-color: #f5f5f5;
 }
 
 #logo {
-    width: 40px;
-    height: 40px;
+    width: 50%;
+    height: 60px;
     object-fit: cover;
+    min-width: 140px;
 }
+
+.fix-sticky-top {
+    position: fixed;
+}
+
+/* End Header */
 
 img {
     object-fit: cover;
     width: 100%;
-    /* max-width: 100px; */
-}
-
-.brand {
-    width: 24px;
-    height: 24px;
-    object-fit: cover;
+    height: 100%;
 }
 
 .carousel-item {
@@ -93,7 +102,31 @@ a {
     text-decoration: none;
 }
 
-/* Home */
+/* start Home */
+.mt-200 {
+    margin-top: 200px;
+}
+
 .fix-banner {
     height: 100%;
 }
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.marketing .col-lg-3 {
+    text-align: center;
+}
+
+.img-category {
+    width: 100px;
+    height: 100px;
+}
+
+.img-product-suggest {
+    width: 140px;
+    height: 140px;
+}
+
+/* end Home */

@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="<?php echo _WEB_ROOT ?>/public/assets/clients/css/product-detail.css">
+<link rel="stylesheet" href="<?php echo _WEB_ROOT ?>/public/assets/clients/css/test1.css">
+<link rel="stylesheet" href="<?php echo _WEB_ROOT ?>/public/assets/clients/js/test1.css">
 <main class="main-page">
     <div class="super_container">
         <header class="header" style="display: none;">
@@ -29,15 +31,29 @@
         <div class="single_product">
             <div class="container-fluid" style=" background-color: #fff; padding: 11px;">
                 <div class="row">
-                    <div class="col-lg-2 order-lg-1 order-2">
-                        <ul class="image_list">
-                            <li data-image="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg" alt=""></li>
-                            <li data-image="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713228/single_2.jpg"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713228/single_2.jpg" alt=""></li>
-                            <li data-image="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713228/single_3.jpg"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713228/single_3.jpg" alt=""></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 order-lg-2 order-1">
-                        <div class="image_selected"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg" alt=""></div>
+                    <div class="col-lg-6">
+                        <div class="container">
+                            <div class="main">
+                                <img src="https://images.unsplash.com/photo-1693892014156-7de1a64f682f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" class="img-feature">
+                                <div class="control prev">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="control next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="list-image">
+                                <div><img src="https://images.unsplash.com/photo-1693892014156-7de1a64f682f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></div>
+                                <div><img src="https://plus.unsplash.com/premium_photo-1675314768267-b6ac0b096e07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></div>
+                                <div><img src="https://images.unsplash.com/photo-1666107677986-c264fc8f908e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></div>
+                                <div><img src="https://images.unsplash.com/photo-1619523015493-942a50562cdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></div>
+                                <div><img src="https://images.unsplash.com/photo-1545105366-5d6173ec720a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></div>
+                                <div><img src="https://images.unsplash.com/photo-1519293978507-9c6bb9f82eda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></div>
+                                <div><img src="https://images.unsplash.com/photo-1545889240-1e3233044147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt=""></div>
+                                <div><img src="https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></div>
+                                <div><img src="https://images.unsplash.com/photo-1545832063-74f2d924b61a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-6 order-3">
                         <div class="product_description">
@@ -88,75 +104,6 @@
                                 </div>
                                 <div class="col-xs-6"> <button type="button" class="btn btn-primary shop-button">Add to Cart</button> <button type="button" class="btn btn-success shop-button">Buy Now</button>
                                     <div class="product_fav"><i class="fas fa-heart"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-underline">
-                    <div class="col-md-6"> <span class=" deal-text">Combo Offers</span> </div>
-                    <div class="col-md-6"> <a href="#" data-abc="true"> <span class="ml-auto view-all"></span> </a> </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="row padding-2">
-                            <div class="col-md-5 padding-0">
-                                <div class="bbb_combo">
-                                    <div class="bbb_combo_image"><img class="bbb_combo_image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560924153/alcatel-smartphones-einsteiger-mittelklasse-neu-3m.jpg" alt=""></div>
-                                    <div class="d-flex flex-row justify-content-start"> <strike style="color:red;"> <span class="fs-10" style="color:black;">₹ 32,000<span> </span></span></strike> <span class="ml-auto"><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i></span> </div>
-                                    <div class="d-flex flex-row justify-content-start" style=" margin-bottom: 13px; "> <span style="margin-top: -4px;">₹30,000</span> <span class="ml-auto fs-10">23 Reviews</span> </div> <span>Acer laptop with 10GB RAM + 500 GB Hard Disk</span>
-                                </div>
-                            </div>
-                            <div class="col-md-2 text-center"> <span class="step">+</span> </div>
-                            <div class="col-md-5 padding-0">
-                                <div class="bbb_combo">
-                                    <div class="bbb_combo_image"><img class="bbb_combo_image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560924153/alcatel-smartphones-einsteiger-mittelklasse-neu-3m.jpg" alt=""></div>
-                                    <div class="d-flex flex-row justify-content-start"> <strike style="color:red;"> <span class="fs-10" style="color:black;">₹ 32,000<span> </span></span></strike> <span class="ml-auto"><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i></span> </div>
-                                    <div class="d-flex flex-row justify-content-start" style=" margin-bottom: 13px; "> <span style="margin-top: -4px;">₹30,000</span> <span class="ml-auto fs-10">23 Reviews</span> </div> <span>Acer laptop with 10GB RAM + 500 GB Hard Disk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12" style="margin-left: 36px;">
-                                <div class="boxo-pricing-items">
-                                    <div class="combo-pricing-item"> <span class="items_text">1 Item</span> <span class="combo_item_price">₹13,200</span> </div>
-                                    <div class="combo-plus"> <span class="plus-sign">+</span> </div>
-                                    <div class="combo-pricing-item"> <span class="items_text">1 Add-on</span> <span class="combo_item_price">₹500</span> </div>
-                                    <div class="combo-plus"> <span class="plus-sign">=</span> </div>
-                                    <div class="combo-pricing-item"> <span class="items_text">Total</span> <span class="combo_item_price">₹13,700</span> </div>
-                                    <div class="add-both-cart-button"> <button type="button" class="btn btn-primary shop-button">Add to Cart</button> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 text-center"> <span class="vertical-line"></span> </div>
-                    <div class="col-md-5" style=" margin-left: -27px;">
-                        <div class="row padding-2">
-                            <div class="col-md-5 padding-0">
-                                <div class="bbb_combo">
-                                    <div class="bbb_combo_image"><img class="bbb_combo_image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560924153/alcatel-smartphones-einsteiger-mittelklasse-neu-3m.jpg" alt=""></div>
-                                    <div class="d-flex flex-row justify-content-start"> <strike style="color:red;"> <span class="fs-10" style="color:black;">₹ 32,000<span> </span></span></strike> <span class="ml-auto"><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating p-rating"></i><i class="fa fa-star p-rating"></i></span> </div>
-                                    <div class="d-flex flex-row justify-content-start" style=" margin-bottom: 13px; "> <span style="margin-top: -4px;">₹30,000</span> <span class="ml-auto fs-10">23 Reviews</span> </div> <span>Acer laptop with 10GB RAM + 500 GB Hard Disk</span>
-                                </div>
-                            </div>
-                            <div class="col-md-2 text-center"> <span class="step">+</span> </div>
-                            <div class="col-md-5 padding-0">
-                                <div class="bbb_combo">
-                                    <div class="bbb_combo_image"><img class="bbb_combo_image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560924153/alcatel-smartphones-einsteiger-mittelklasse-neu-3m.jpg" alt=""></div>
-                                    <div class="d-flex flex-row justify-content-start"> <strike style="color:red;"> <span class="fs-10" style="color:black;">₹ 32,000<span> </span></span></strike> <span class="ml-auto"><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i></span> </div>
-                                    <div class="d-flex flex-row justify-content-start" style=" margin-bottom: 13px; "> <span style="margin-top: -4px;">₹30,000</span> <span class="ml-auto fs-10">23 Reviews</span> </div> <span>Acer laptop with 10GB RAM + 500 GB Hard Disk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12" style="margin-left: 36px;">
-                                <div class="boxo-pricing-items">
-                                    <div class="combo-pricing-item"> <span class="items_text">1 Item</span> <span class="combo_item_price">₹13,200</span> </div>
-                                    <div class="combo-plus"> <span class="plus-sign">+</span> </div>
-                                    <div class="combo-pricing-item"> <span class="items_text">1 Add-on</span> <span class="combo_item_price">₹500</span> </div>
-                                    <div class="combo-plus"> <span class="plus-sign">=</span> </div>
-                                    <div class="combo-pricing-item"> <span class="items_text">Total</span> <span class="combo_item_price">₹13,700</span> </div>
-                                    <div class="add-both-cart-button"> <button type="button" class="btn btn-primary shop-button">Add to Cart</button> </div>
                                 </div>
                             </div>
                         </div>
