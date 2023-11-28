@@ -92,11 +92,12 @@
                     </tbody>
                 </table>
 
-                <a href="../index.html" class="btn btn-warning btn-md"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Quay
+                <a href="<?php echo _WEB_ROOT ?>/home" class="btn btn-warning btn-md"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Quay
                     về trang chủ</a>
-                <a href="checkout.html" class="btn btn-primary btn-md"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+                <a href="<?php echo _WEB_ROOT ?>/checkout" class="btn btn-primary btn-md"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
             </div>
         </div>
     </div>
     <!-- End block content -->
 </main>
+   
