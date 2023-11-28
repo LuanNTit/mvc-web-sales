@@ -11,7 +11,7 @@
             
             $title = 'Danh sach san pham';
             $this->data['page_title'] = $title;
-            $this->data['sub_content']['product_list'] = $dataProduct;
+            $this->data['sub_content']['products_list'] = $dataProduct;
             $this->data['content'] = 'products/list';
             // render view
             $this->render('layouts/client_layout', $this->data);

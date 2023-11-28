@@ -65,32 +65,32 @@
         <!-- Three columns of text below the carousel -->
         <div class="row bg-white py-4 text-center">
             <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['products_list'][0]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['products_list'][0]['name']) ?></h2>
+                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][0]['url_img']) ?>" />
+                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][0]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['products_list'][1]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['products_list'][1]['name']) ?></h2>
+                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][1]['url_img']) ?>" />
+                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][1]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['products_list'][2]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['products_list'][2]['name']) ?></h2>
+                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][2]['url_img']) ?>" />
+                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['products_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['products_list'][2]['name']) ?></h2>
+                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][3]['url_img']) ?>" />
+                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['products_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['products_list'][2]['name']) ?></h2>
+                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][3]['url_img']) ?>" />
+                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['products_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['products_list'][2]['name']) ?></h2>
+                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][3]['url_img']) ?>" />
+                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['products_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['products_list'][2]['name']) ?></h2>
+                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][3]['url_img']) ?>" />
+                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
         

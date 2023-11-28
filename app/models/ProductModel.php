@@ -4,13 +4,27 @@ class ProductModel {
         return [
             [
                 "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham1.png",
-                "name" => "Women's Blouse Top",
-                "price" => 53
+                "name" => "Áo gucci",
+                "price" => 53,
+                "root-price" => 100
             ],
             [
                 "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham2.png",
-                "name" => "Men's Jacket",
-                "price" => 75.55
+                "name" => "Áo khoác gió",
+                "price" => 75.55,
+                "root-price" => 150
+            ],
+            [
+                "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham3.png",
+                "name" => "Áo thun rộng",
+                "price" => 75.55,
+                "root-price" => 150
+            ],
+            [
+                "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham4.png",
+                "name" => "áo thung cổ tròn",
+                "price" => 75.55,
+                "root-price" => 150
             ]
         ];
     }

@@ -19,151 +19,175 @@
                     </div>
                     <div class="row">
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/san-pham-1">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
                                 <div class="card h-100 border-0">
                                     <div class="card-img-top">
-                                        <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
                                     </div>
                                     <div class="card-body text-center">
                                         <h4 class="card-title">
-                                            <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
                                         </h4>
                                         <h5 class="card-price small text-warning">
                                             <i>
-                                                <s>$199</s> $99</i>
+                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
+                                            </i>
                                         </h5>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                        <a href="<?php echo _WEB_ROOT ?>/san-pham/san-pham-1"> 
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][1]['name']) ?>">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="<?php print_r($data['products_list'][1]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][1]['name']) ?></a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$<?php print_r($data['products_list'][1]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
+                                            </i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][2]['name']) ?>">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="<?php print_r($data['products_list'][2]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][2]['name']) ?></a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$<?php print_r($data['products_list'][2]['root-price']) ?></s> $<?php print_r($data['products_list'][2]['price']) ?>
+                                            </i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][3]['name']) ?>">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="<?php print_r($data['products_list'][3]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][3]['name']) ?></a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$<?php print_r($data['products_list'][3]['root-price']) ?></s> $<?php print_r($data['products_list'][3]['price']) ?>
+                                            </i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
+                                            </i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
+                                            </i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
+                                            </i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
+                                            </i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-img-top">
-                                    <img src="https://via.placeholder.com/240x240/5fa9f8/efefef" class="img-fluid mx-auto d-block" alt="Card image cap">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
+                                <div class="card h-100 border-0">
+                                    <div class="card-img-top">
+                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">
+                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
+                                        </h4>
+                                        <h5 class="card-price small text-warning">
+                                            <i>
+                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
+                                            </i>
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">
-                                        <a href="product.html" class=" font-weight-bold text-dark text-uppercase small"> Product name</a>
-                                    </h4>
-                                    <h5 class="card-price small text-warning">
-                                        <i>
-                                            <s>$199</s> $99</i>
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

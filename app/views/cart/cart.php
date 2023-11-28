@@ -1,6 +1,6 @@
-<main role="main" class="main-page">
+<main role="main" class="bg-body-tertiary pb-4">
     <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là content -->
-    <div class="container mt-4">
+    <div class="container pt-4">
         <div id="thongbao" class="alert alert-danger d-none face" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">×</span>
