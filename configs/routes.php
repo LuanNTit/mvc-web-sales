@@ -10,6 +10,7 @@
     $routes['dang-nhap'] = 'account/login';
     $routes['dang-ky'] = 'account/signup';
     $routes['gio-hang'] = 'cart';
+    $routes['trang-chu/tim-kiem'] = 'home/search';
     $routes['thanh-toan/.+-(\d+)'] = 'checkout/index/$1';
     $routes['san-pham/.+-(\d+)'] = 'product/detail/$1';
     // $routes['don-hang'] = 'order';

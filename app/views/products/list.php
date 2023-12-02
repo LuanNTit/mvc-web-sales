@@ -1,9 +1,17 @@
-<main class="bg-body-tertiary pb-4">
-    <div class="container pt-5">
+<main class="bg-body-tertiary">
+    <div class="container py-4">
         <div class="row">
+            <?php if (!empty($data['products_list'])) { ?>
             <div class="col-md-8 order-md-2 col-lg-9">
                 <div class="container-fluid">
-                    <div class="row   mb-5">
+                    <?php
+                    if (!empty($data['keyword'])) {
+                    echo '<div class="row">
+                        <p class="text-center">Kết quả tìm kiếm cho từ khoá: <span class="text-danger">'.$data['keyword'].'</span></p>
+                    </div>';
+                    }
+                    ?>
+                    <div class="row mb-5">
                         <div class="col-12">
                             <div class="dropdown text-md-left text-center float-md-left mb-3 mt-3 mt-md-0 mb-md-0">
                                 <label class="mr-2">Sort by:</label>
@@ -273,7 +281,12 @@
                 <div class="divider mt-5 mb-5 border-bottom border-secondary"></div>
                 <a href="#" class="btn btn-lg btn-block btn-primary mt-5">Update Results</a>
             </div>
-
+            <?php } else { ?>
+                <div class="text-center mb-3">
+                    <img style="width: 140px" src="<?php echo _WEB_ROOT ?>/public/assets/clients/images/img-search-not-found.png" />
+                    <p>Từ khoá tìm kiếm không tồn tại</p>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </main>

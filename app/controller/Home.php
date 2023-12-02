@@ -25,7 +25,16 @@
 
         public function search() {
             $keyword = !empty($_GET['keyword'])?$_GET['keyword']:'';
-            echo 'Tu khoa can tim: '.$keyword;
+            // echo 'Tu khoa can tim: '.$keyword;
+
+            $dataProduct = $this->model_home->getProductSearch($keyword);            
+            $title = 'Trang home';
+            $this->data['sub_content']['keyword'] = $keyword;
+            $this->data['page_title'] = $title;
+            $this->data['sub_content']['products_list'] = $dataProduct;
+            $this->data['content'] = 'products/list';
+            // render view
+            $this->render('layouts/client_layout', $this->data);
         }
     }
 ?>

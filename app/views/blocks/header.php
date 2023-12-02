@@ -22,8 +22,8 @@
                 </a>
             </div>
 
-            <form class="col-12 col-md-6 mb-3 mb-lg-0" role="search">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            <form action="<?php echo _WEB_ROOT ?>/trang-chu/tim-kiem" class="col-12 col-md-6 mb-3 mb-lg-0" role="search">
+                <input type="search" name="keyword" class="form-control" placeholder="Search..." aria-label="Search">
             </form>
 
             <div class="col-md-3 text-center">
