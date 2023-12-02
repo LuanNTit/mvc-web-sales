@@ -22,6 +22,7 @@
             $this->data['sub_content']['info'] = $product->getDetail($id);
             $this->data['sub_content']['title'] = 'Chi tiet san pham';
             $this->data['page_title'] = 'Chi tiet san pham';
+            $this->data['sub_content']['img-descriptions'] = $product->getImgDescriptions();
             $this->data['content'] = 'products/detail';
             $this->render('layouts/client_layout', $this->data);
         }

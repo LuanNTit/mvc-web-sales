@@ -37,5 +37,17 @@ class ProductModel {
         ];
         return $data[$id];
     }
+
+    public function getImgDescriptions() {
+        $data = [
+            _WEB_ROOT."/public/assets/clients/images/description-1.webp",
+            _WEB_ROOT."/public/assets/clients/images/description-2.webp",
+            _WEB_ROOT."/public/assets/clients/images/description-3.webp",
+            _WEB_ROOT."/public/assets/clients/images/description-4.webp",
+            _WEB_ROOT."/public/assets/clients/images/description-5.webp",
+            _WEB_ROOT."/public/assets/clients/images/description-6.webp"
+        ];
+        return $data;
+    }
 }
 ?>
