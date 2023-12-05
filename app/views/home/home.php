@@ -39,64 +39,42 @@
         </div>
         <!-- Three columns of text below the carousel -->
         <div class="row bg-white py-4 text-center">
+            <?php foreach ($data['categories_list'] as $item) { ?>
             <div class="col-lg-3">
-                <img class="img-thumbnail img-category" src="<?php echo _WEB_ROOT.$data['categories_list'][0]['url_img']; ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][0]['name']) ?></h2>
+                <img class="img-thumbnail img-category" src="<?php echo _WEB_ROOT . $item['url_img']; ?>" />
+                <h2 class="fw-normal fs-5"><?php echo $item['name'] ?></h2>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
-                <img class="img-thumbnail img-category" src="<?php echo _WEB_ROOT.$data['categories_list'][1]['url_img'] ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][1]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
-                <img class="img-thumbnail img-category" src="<?php echo _WEB_ROOT.$data['categories_list'][2]['url_img'] ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][2]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
-                <img class="img-thumbnail img-category" src="<?php echo _WEB_ROOT.$data['categories_list'][3]['url_img'] ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][3]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
+            <?php } ?>
         </div><!-- /.row -->
 
 
         <!-- START THE FEATURETTES -->
-        <div class="row bg-white mt-4 text-center">
+        <div class="row bg-white mt-4 text-center mb-2">
             <div class="text-center border-bottom py-2 fs-3 title-color">GỢI Ý SẢN PHẨM</div>
         </div>
         <!-- Three columns of text below the carousel -->
-        <div class="row bg-white py-4 text-center">
-            <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][0]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][0]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][1]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][1]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][2]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-2">
-                <img class="img-thumbnail img-product-suggest" src="<?php print_r($data['suggests_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['suggests_list'][2]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-        
-        
-        <!-- /END THE FEATURETTES -->
+        <div class="row">
+            <?php foreach ($data['suggests_list'] as $item) { ?>
+            <div class="col-6 col-md-6 col-lg-3 mb-2 img-thumbnail">
+                <a href="<?php echo _WEB_ROOT.'/san-pham/'.$item['name'].'-i.'.$item['id'] ?>">
+                    <div class="card h-100 border-0">
+                        <div class="card-img-top">
+                            <img class="img-product-suggest" src="<?php echo _WEB_ROOT.$item['url_img'] ?>" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title"><?php echo $item['name'] ?></h4>
+                            <h5 class="card-price small text-warning">
+                                <i>
+                                    <s>$<?php echo $item['root_price'] ?></s> $<?php echo $item['price'] ?> </i>
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <?php } ?>
+            <!-- /END THE FEATURETTES -->
 
+        </div>
     </div><!-- /.container -->
 
 </main>

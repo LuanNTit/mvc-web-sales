@@ -48,10 +48,12 @@
 
 .prev {
     left: 10px;
+    color: #F28E3A;
 }
 
 .next {
     right: 10px;
+    color: #F28E3A;
 }
 
 div > .active {

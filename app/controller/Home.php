@@ -15,8 +15,11 @@
             $this->data['sub_content']['suggests_list'] = $dataProductRecommend;
             
             // echo "<pre>";
-            // print_r($this->data['sub_content']['product_list']);
+            // print_r($this->data);
             // echo "</pre>";
+
+            // header('Content-Type:application/json');
+            // echo json_encode($this->data);
 
             $this->data['page_title'] = $title;
             $this->data['content'] = 'home/home';

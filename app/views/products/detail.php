@@ -5,7 +5,7 @@
             <div class="col-lg-6">
                 <div>
                     <div class="main">
-                        <img src="<?php echo $data['img-descriptions'][0] ?>" alt="" class="img-feature">
+                        <img src="<?php echo _WEB_ROOT.$data['info'][0]['url_img'] ?>" alt="" class="img-feature img-detail-list">
                         <div class="control prev">
                             <i class="fa-solid fa-chevron-left"></i>
                         </div>
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <div class="list-image">
-                        <div><img src="<?php echo $data['img-descriptions'][0] ?>" alt=""></div>
+                        <div><img src="<?php echo _WEB_ROOT.$data['info'][0]['url_img'] ?>" alt=""></div>
                         <div><img src="<?php echo $data['img-descriptions'][1] ?>" alt=""></div>
                         <div><img src="<?php echo $data['img-descriptions'][2] ?>" alt=""></div>
                         <div><img src="<?php echo $data['img-descriptions'][3] ?>" alt=""></div>
@@ -29,14 +29,14 @@
             <div class="col-lg-6">
                 <div class="row">
                     <div>
-                        <h3>[hot..] --Điện thoại hot lp/ 14 pro max (256gb) - máy có tem mác - bảo hành 12 tháng - đổi trả trong 7 ngày [COP]</h3>
+                        <h3><?php echo $data['info'][0]['name'] ?></h3>
                         <div class="row mb-4">
                             <div class="col-2">Đánh Giá</div>
                             <div class="col-auto"><span>|</span><span>37 Đã Bán</span></div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-2">Price: </div>
-                            <div class="col-auto"><san>₫2.590.000</span><span> - </span><span>₫1.528.100</span> <span>41% GIẢM</span></div>
+                            <div class="col-auto"><san>₫<?php echo $data['info'][0]['root_price'] ?>đ</span><span> - </span><span>₫<?php echo $data['info'][0]['price'] ?>đ</span> <span>41% GIẢM</span></div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-2">Mã Giảm Giá Của Shop</div>
@@ -45,8 +45,8 @@
                         <div class="row mb-4">
                             <div class="col-2">Vận Chuyển</div>
                             <div class="col-auto">
-                                <div>Vận chuyển tới: <span></span></div>
-                                <div>Phí vận chuyển: <span></span></div>
+                                <div>Vận chuyển tới: <span><?php echo $data['info'][0]['transport_to'] ?></span></div>
+                                <div>Phí vận chuyển: <span><?php echo $data['info'][0]['transport_fee'] ?></span></div>
                             </div>
                         </div>
                         <div class="row mb-4">
@@ -55,7 +55,7 @@
                         </div>
                         <div class="row mb-4">
                             <div class="col-2">Số Lượng: </div>
-                            <div class="col-auto"> <span>1</span> <span>4000 sản phẩm có sẵn</span></div>
+                            <div class="col-auto"> <span>+1-</span> <span><?php echo $data['info'][0]['quantity'] ?> sản phẩm có sẵn</span></div>
                         </div>
                         <div>
                             <button class="btn-second">Thêm Vào Giỏ Hàng</button>

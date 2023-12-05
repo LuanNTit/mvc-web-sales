@@ -151,13 +151,17 @@ a {
 }
 
 .img-product-suggest {
-    width: 140px;
-    height: 140px;
+    object-fit: contain;
+    max-height: 180px;
 }
 
 /* end Home */
 
 /* Detail Product */
+.img-detail-list {
+    object-fit: contain;
+    height: 370px;
+}
 .p-multiple-lines {
     white-space: pre-line;
 }

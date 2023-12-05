@@ -1,41 +1,39 @@
 <?php
-class ProductModel {
+class ProductModel extends Model {
     public function getProductLists() {
-        return [
-            [
-                "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham1.png",
-                "name" => "Áo gucci",
-                "price" => 53,
-                "root-price" => 100
-            ],
-            [
-                "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham2.png",
-                "name" => "Áo khoác gió",
-                "price" => 75.55,
-                "root-price" => 150
-            ],
-            [
-                "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham3.png",
-                "name" => "Áo thun rộng",
-                "price" => 75.55,
-                "root-price" => 150
-            ],
-            [
-                "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham4.png",
-                "name" => "áo thung cổ tròn",
-                "price" => 75.55,
-                "root-price" => 150
-            ]
-        ];
+        // return [
+        //     [
+        //         "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham1.png",
+        //         "name" => "Áo gucci",
+        //         "price" => 53,
+        //         "root-price" => 100
+        //     ],
+        //     [
+        //         "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham2.png",
+        //         "name" => "Áo khoác gió",
+        //         "price" => 75.55,
+        //         "root-price" => 150
+        //     ],
+        //     [
+        //         "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham3.png",
+        //         "name" => "Áo thun rộng",
+        //         "price" => 75.55,
+        //         "root-price" => 150
+        //     ],
+        //     [
+        //         "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham4.png",
+        //         "name" => "áo thung cổ tròn",
+        //         "price" => 75.55,
+        //         "root-price" => 150
+        //     ]
+        // ];
+        $data = $this->db->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
     }
 
     public function getDetail($id) {
-        $data = [
-            'Sản phẩm 1',
-            'Sản phẩm 2',
-            'Sản phẩm 3'
-        ];
-        return $data[$id];
+        $data = $this->db->query("SELECT * FROM products WHERE id = $id")->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
     }
 
     public function getImgDescriptions() {
