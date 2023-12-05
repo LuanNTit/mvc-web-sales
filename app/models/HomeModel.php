@@ -4,30 +4,33 @@
  * Ke thua tu class Model
  * 
  */
-class HomeModel
+class HomeModel extends Model
 {
-    protected $__table = 'products';
+    protected $_table = 'category';
+
+    
 
     public function getCategory()
     {
-        $data = [
-            [
-                "name" => "Thời Trang Nam",
-                "url_img" => _WEB_ROOT . "/public/assets/clients/images/category1.png"
-            ],
-            [
-                "name" => "Điện thoại và phụ kiện",
-                "url_img" => _WEB_ROOT . "/public/assets/clients/images/category2.jpg"
-            ],
-            [
-                "name" => "Thời trang nữ",
-                "url_img" => _WEB_ROOT . "/public/assets/clients/images/category3.jpg"
-            ],
-            [
-                "name" => "Nhà cửa và đời sống",
-                "url_img" => _WEB_ROOT . "/public/assets/clients/images/category5.jpg"
-            ]
-        ];
+        // $data = [
+        //     [
+        //         "name" => "Thời Trang Nam",
+        //         "url_img" => _WEB_ROOT . "/public/assets/clients/images/category1.png"
+        //     ],
+        //     [
+        //         "name" => "Điện thoại và phụ kiện",
+        //         "url_img" => _WEB_ROOT . "/public/assets/clients/images/category2.jpg"
+        //     ],
+        //     [
+        //         "name" => "Thời trang nữ",
+        //         "url_img" => _WEB_ROOT . "/public/assets/clients/images/category3.jpg"
+        //     ],
+        //     [
+        //         "name" => "Nhà cửa và đời sống",
+        //         "url_img" => _WEB_ROOT . "/public/assets/clients/images/category5.jpg"
+        //     ]
+        // ];
+        $data = $this->db->query("SELECT * FROM $this->_table")->fetchAll(PDO::FETCH_ASSOC);
         return $data;
     }
 
