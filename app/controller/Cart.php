@@ -5,12 +5,19 @@
                    
         }
         public function index() {
-            // require_once _DIR_ROOT.'/app/view/home.php';
-            $title = "Trang cart";
-            $this->data['sub_content']['product_list'] = 'chua dung model';
+           $this->list_productCart();
+        }
+
+        public function list_productCart() {
+            $product = $this->model('CartModel');
+            $dataProduct = $product->getproductCart();
+            
+            $title = 'Gio hang';
             $this->data['page_title'] = $title;
+            $this->data['sub_content']['productCart_list'] = $dataProduct;
             $this->data['content'] = 'cart/cart';
-            $this->render("layouts/client_layout", $this->data);
+            // render view
+            $this->render('layouts/client_layout', $this->data);
         }
 
         public function search() {

@@ -19,7 +19,7 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Prev  ious</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -53,7 +53,7 @@
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-3">
                 <img class="img-thumbnail img-category" src="<?php print_r($data['categories_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][2]['name']) ?></h2>
+                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][3]['name']) ?></h2>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 

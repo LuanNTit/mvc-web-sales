@@ -24,20 +24,21 @@
                     </thead>
                     <tbody id="datarow">
                         <tr>
-                            <td>1</td>
+                            <td><?php print_r($data['productCart_list'][0]['id']) ?></td>
                             <td>
                                 <div class="box-cart">
-                                    <img class="img-cart" src="<?php echo _WEB_ROOT ?>/public/assets/clients/images/sanpham1.png" class="hinhdaidien">
+                                    <img class="img-cart" src="<?php print_r($data['productCart_list'][0]['url_img']) ?>"  
+                                    class="hinhdaidien">
                                 </div>
                             </td>
-                            <td>Apple Ipad 4 Wifi 16GB</td>
+                            <td><?php print_r($data['productCart_list'][0]['name']) ?></td>
                             <td class="text-right">
                                 <span class="minus">-</span>
-                                <span class="num">1</span>
+                                <span class="num"><?php print_r($data['productCart_list'][0]['quantity']) ?></span>
                                 <span class="plus">+</span>
                             </td>
-                            <td class="text-right">11,800,000.00</td>
-                            <td class="text-right">23,600,000</td>
+                            <td class="text-right"><?php print_r($data['productCart_list'][0]['unitprice']) ?></td>
+                            <td class="text-right"><?php print_r($data['productCart_list'][0]['countprice']) ?></td>
                             <td>
                                 <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính sp_ma -->
                                 <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
@@ -46,45 +47,47 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>2</td>
+                            <td><?php print_r($data['productCart_list'][1]['id']) ?></td>
                             <td>
                                 <div class="box-cart">
-                                    <img class="img-cart" src="<?php echo _WEB_ROOT ?>/public/assets/clients/images/sanpham2.png" class="hinhdaidien">
+                                    <img class="img-cart" src="<?php print_r($data['productCart_list'][1]['url_img']) ?>"  
+                                    class="hinhdaidien">
                                 </div>
                             </td>
-                            <td>Nokia Asha 311</td>
+                            <td><?php print_r($data['productCart_list'][1]['name']) ?></td>
                             <td class="text-right">
                                 <span class="minus">-</span>
-                                <span class="num">1</span>
+                                <span class="num"><?php print_r($data['productCart_list'][1]['quantity']) ?></span>
                                 <span class="plus">+</span>
                             </td>
-                            <td class="text-right">2,699,000.00</td>
-                            <td class="text-right">1,0796,000</td>
+                            <td class="text-right"><?php print_r($data['productCart_list'][1]['unitprice']) ?></td>
+                            <td class="text-right"><?php print_r($data['productCart_list'][1]['countprice']) ?></td>
                             <td>
                                 <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính sp_ma -->
-                                <a id="delete_2" data-sp-ma="6" class="btn btn-danger btn-delete-sanpham">
+                                <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
                                     <i class="fa fa-trash" aria-hidden="true"></i> Xóa
                                 </a>
                             </td>
                         </tr>
                         <tr>
-                            <td>3</td>
+                            <td><?php print_r($data['productCart_list'][2]['id']) ?></td>
                             <td>
                                 <div class="box-cart">
-                                    <img class="img-cart" src="<?php echo _WEB_ROOT ?>/public/assets/clients/images/sanpham3.png" class="hinhdaidien">
+                                    <img class="img-cart" src="<?php print_r($data['productCart_list'][2]['url_img']) ?>"  
+                                    class="hinhdaidien">
                                 </div>
                             </td>
-                            <td>Apple iPhone 5 16GB White</td>
+                            <td><?php print_r($data['productCart_list'][2]['name']) ?></td>
                             <td class="text-right">
                                 <span class="minus">-</span>
-                                <span class="num">1</span>
+                                <span class="num"><?php print_r($data['productCart_list'][2]['quantity']) ?></span>
                                 <span class="plus">+</span>
                             </td>
-                            <td class="text-right">1,4990,000.00</td>
-                            <td class="text-right">119,920,000</td>
+                            <td class="text-right"><?php print_r($data['productCart_list'][2]['unitprice']) ?></td>
+                            <td class="text-right"><?php print_r($data['productCart_list'][2]['countprice']) ?></td>
                             <td>
                                 <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính sp_ma -->
-                                <a id="delete_3" data-sp-ma="4" class="btn btn-danger btn-delete-sanpham">
+                                <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
                                     <i class="fa fa-trash" aria-hidden="true"></i> Xóa
                                 </a>
                             </td>
