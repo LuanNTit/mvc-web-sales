@@ -1,9 +1,17 @@
-<main class="main-page">
-    <div class="container pt-5">
+<main class="bg-body-tertiary">
+    <div class="container py-4">
         <div class="row">
+            <?php if (!empty($data['products_list'])) { ?>
             <div class="col-md-8 order-md-2 col-lg-9">
                 <div class="container-fluid">
-                    <div class="row   mb-5">
+                    <?php
+                    if (!empty($data['keyword'])) {
+                    echo '<div class="row">
+                        <p class="text-center">Kết quả tìm kiếm cho từ khoá: <span class="text-danger">'.$data['keyword'].'</span></p>
+                    </div>';
+                    }
+                    ?>
+                    <div class="row mb-5">
                         <div class="col-12">
                             <div class="dropdown text-md-left text-center float-md-left mb-3 mt-3 mt-md-0 mb-md-0">
                                 <label class="mr-2">Sort by:</label>
@@ -18,177 +26,27 @@
                         </div>
                     </div>
                     <div class="row">
+                        <?php foreach ($data['products_list'] as $item) { ?>
                         <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
-                                <div class="card h-100 border-0">
+                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php echo $item['name'].'-i.'.$item['id'] ?>">
+                                <div class="card h-100">
                                     <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
+                                        <img class="img-product-suggest" src="<?php echo _WEB_ROOT.$item['url_img'] ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
                                     </div>
                                     <div class="card-body text-center">
                                         <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
+                                            <?php echo $item['name'] ?>
                                         </h4>
                                         <h5 class="card-price small text-warning">
                                             <i>
-                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
+                                                <s>$<?php echo $item['root_price'] ?></s> $<?php echo $item['price'] ?>
                                             </i>
                                         </h5>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][1]['name']) ?>">
-                                <div class="card h-100 border-0">
-                                    <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][1]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][1]['name']) ?></a>
-                                        </h4>
-                                        <h5 class="card-price small text-warning">
-                                            <i>
-                                                <s>$<?php print_r($data['products_list'][1]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
-                                            </i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][2]['name']) ?>">
-                                <div class="card h-100 border-0">
-                                    <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][2]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][2]['name']) ?></a>
-                                        </h4>
-                                        <h5 class="card-price small text-warning">
-                                            <i>
-                                                <s>$<?php print_r($data['products_list'][2]['root-price']) ?></s> $<?php print_r($data['products_list'][2]['price']) ?>
-                                            </i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][3]['name']) ?>">
-                                <div class="card h-100 border-0">
-                                    <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][3]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][3]['name']) ?></a>
-                                        </h4>
-                                        <h5 class="card-price small text-warning">
-                                            <i>
-                                                <s>$<?php print_r($data['products_list'][3]['root-price']) ?></s> $<?php print_r($data['products_list'][3]['price']) ?>
-                                            </i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
-                                <div class="card h-100 border-0">
-                                    <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
-                                        </h4>
-                                        <h5 class="card-price small text-warning">
-                                            <i>
-                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
-                                            </i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
-                                <div class="card h-100 border-0">
-                                    <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
-                                        </h4>
-                                        <h5 class="card-price small text-warning">
-                                            <i>
-                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
-                                            </i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
-                                <div class="card h-100 border-0">
-                                    <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
-                                        </h4>
-                                        <h5 class="card-price small text-warning">
-                                            <i>
-                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
-                                            </i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
-                                <div class="card h-100 border-0">
-                                    <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
-                                        </h4>
-                                        <h5 class="card-price small text-warning">
-                                            <i>
-                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
-                                            </i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-4 mb-3">
-                            <a href="<?php echo _WEB_ROOT ?>/san-pham/<?php print_r($data['products_list'][0]['name']) ?>">
-                                <div class="card h-100 border-0">
-                                    <div class="card-img-top">
-                                        <img src="<?php print_r($data['products_list'][0]['url_img']) ?>" class="img-fluid mx-auto d-block" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="card-title">
-                                            <a href="product.html" class="fs-5 font-weight-bold text-dark text-uppercase small"> <?php print_r($data['products_list'][0]['name']) ?></a>
-                                        </h4>
-                                        <h5 class="card-price small text-warning">
-                                            <i>
-                                                <s>$<?php print_r($data['products_list'][0]['root-price']) ?></s> $<?php print_r($data['products_list'][0]['price']) ?>
-                                            </i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -273,7 +131,12 @@
                 <div class="divider mt-5 mb-5 border-bottom border-secondary"></div>
                 <a href="#" class="btn btn-lg btn-block btn-primary mt-5">Update Results</a>
             </div>
-
+            <?php } else { ?>
+                <div class="text-center mb-3">
+                    <img style="width: 140px" src="<?php echo _WEB_ROOT ?>/public/assets/clients/images/img-search-not-found.png" />
+                    <p>Từ khoá tìm kiếm không tồn tại</p>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </main>

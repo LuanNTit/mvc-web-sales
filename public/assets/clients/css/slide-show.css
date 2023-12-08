@@ -1,20 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*   border: 1px solid black; */
-}
-
-body {
-    /* height: 100vh; */
-    /* background: #dadada; */
-}
-
-.container {
+/* .container {
     width: 80%;
     height: 80%;
     margin: 50px auto;
-}
+} */
 
 .main {
     height: 80%;
@@ -38,14 +26,16 @@ body {
     flex: 1;
     padding: 5px;
     cursor: pointer;
+    width: 82px;
+    height: 82px;
 }
 
-img {
+/* img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-}
+} */
 
 .control {
     position: absolute;
@@ -58,14 +48,16 @@ img {
 
 .prev {
     left: 10px;
+    color: #F28E3A;
 }
 
 .next {
     right: 10px;
+    color: #F28E3A;
 }
 
-.active {
-    background: rgb(223, 85, 85);
+div > .active {
+    background-color: #F28E3A;
 }
 
 @keyframes slideLeft {
