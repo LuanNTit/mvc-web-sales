@@ -41,25 +41,8 @@
         <div class="row bg-white py-4 text-center">
             <?php foreach ($data['categories_list'] as $item) { ?>
             <div class="col-lg-3">
-<<<<<<< HEAD
-                <img class="img-thumbnail img-category" src="<?php print_r($data['categories_list'][0]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][0]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
-                <img class="img-thumbnail img-category" src="<?php print_r($data['categories_list'][1]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][1]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
-                <img class="img-thumbnail img-category" src="<?php print_r($data['categories_list'][2]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][2]['name']) ?></h2>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
-                <img class="img-thumbnail img-category" src="<?php print_r($data['categories_list'][3]['url_img']) ?>" />
-                <h2 class="fw-normal fs-5"><?php print_r($data['categories_list'][3]['name']) ?></h2>
-=======
                 <img class="img-thumbnail img-category" src="<?php echo _WEB_ROOT . $item['url_img']; ?>" />
                 <h2 class="fw-normal fs-5"><?php echo $item['name'] ?></h2>
->>>>>>> 5fbf255def6f1d289a3d95e00d5c0b4eabe84164
             </div><!-- /.col-lg-4 -->
             <?php } ?>
         </div><!-- /.row -->

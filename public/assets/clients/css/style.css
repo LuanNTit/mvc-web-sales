@@ -95,8 +95,19 @@ img {
     max-width: 100px;
 }
 
-#datarow {
-    line-height: 147px;
+.text-right {
+    line-height: 91px;
+}
+
+.ip-quantity {
+    width: 50px;
+    position: relative;
+    bottom: -30px;
+}
+
+.btn-update {
+    position: relative;
+    bottom: -30px;
 }
 
 .minus, .plus {
@@ -165,4 +176,6 @@ a {
 .p-multiple-lines {
     white-space: pre-line;
 }
+
+
 /* End Detail Product */

@@ -56,6 +56,10 @@
     color: #F28E3A;
 }
 
+.input-quantity {
+    width: 50px;
+}
+
 div > .active {
     background-color: #F28E3A;
 }

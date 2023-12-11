@@ -53,14 +53,22 @@
                             <div class="col-2">Màu Sắc</div>
                             <div class="col-auto"><span>Tím</span> <span>Đen</span> <span>Trắng</span> <span>Vàng gold</span></div>
                         </div>
-                        <div class="row mb-4">
-                            <div class="col-2">Số Lượng: </div>
-                            <div class="col-auto"> <span>+1-</span> <span><?php echo $data['info'][0]['quantity'] ?> sản phẩm có sẵn</span></div>
-                        </div>
-                        <div>
+                        
+                        <!-- <div>
                             <button class="btn-second">Thêm Vào Giỏ Hàng</button>
                             <button class="btn-main text-white">Mua Ngay</button>
-                        </div>
+                        </div> -->
+                        <form action="<?php echo _WEB_ROOT ?>/gio-hang" method="post">
+                            <input type="hidden" name="anhsp" value="<?php echo _WEB_ROOT.$data['info'][0]['url_img'] ?>">
+                            <input type="hidden" name="tensp" value="<?php echo $data['info'][0]['name'] ?>">
+                            <input type="hidden" name="dongia" value="<?php echo $data['info'][0]['root_price'] ?>">
+                            <div class="row mb-4">
+                            <div class="col-2">Số Lượng: </div>
+                            <div class="col-auto"> <input class="input-quantity" type="number" min=0  name="soluong" value="0"> <span><?php echo $data['info'][0]['quantity'] ?> sản phẩm có sẵn</span></div>
+                            </div>
+                            <input type="submit" name="btn-second" value="Thêm vào giỏ hàng" class="btn-second">
+                            <input type="submit" name="btn-second" value="Mua Ngay" class="btn-main text-white">
+                        </form>
                     </div>
                 </div>
             </div>
