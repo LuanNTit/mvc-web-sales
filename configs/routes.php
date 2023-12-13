@@ -13,5 +13,6 @@
     $routes['trang-chu/tim-kiem'] = 'home/search';
     $routes['thanh-toan/.+-(\d+)'] = 'checkout/index/$1';
     $routes['san-pham/.+-i.(\d+)'] = 'product/detail/$1';
+    $routes['san-pham/.+-i.(\d+)/danh-gia'] = 'product/rating/$1';
     // $routes['don-hang'] = 'order';
 ?>

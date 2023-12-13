@@ -34,7 +34,6 @@
 
         // phuong thuc them du lieu
         public function insertData() {
-            
         }
     }
 ?>

@@ -95,5 +95,112 @@
             </div>
         </div>
     </div>
+    <div class="container mt-4 pb-4 bg-white">
+        <div class="row border-bottom">
+            <div class="py-2 title-color"><h3>Đánh giá sản phẩm</h3></div>
+        </div>
+        <div class="row">
+            <form method="post" class="needs-validation" novalidate>
+                <input type="hidden" id="form_type" name="form_type" value="rating">
+                <div class="mb-3">
+                    <label for="formControlInputName" class="form-label">Họ tên</label>
+                    <input type="text" class="form-control" id="formControlInputName" name="name" placeholder="Họ tên của bạn" required>
+                    <div class="invalid-feedback">
+                    Hãy nhập họ tên
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextareaContent" class="form-label">Nội dung đánh giá</label>
+                    <textarea class="form-control" id="exampleFormControlTextareaContent" rows="3" name="content" required></textarea>
+                    <div class="invalid-feedback">
+                    Hãy nhập đánh giá
+                    </div>
+                </div>
+                <div class="mb-3 rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                </div>
+                <br />
+                <div class="mt-5">
+                    <button type="submit" class="btn btn-primary mb-3">Gửi đánh giá</button>
+                </div>
+            </form>
+            
+        </div>
+        <div class="row">
+
+        </div>
+        <?php
+        foreach ($data['ratings'] as $key => $value) {
+            ?>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $value['user_name'] ?></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <div class="mb-3 rating">
+                            <input type="radio" id="star5" name="rating<?php echo $value['id']?>" value="5" <?php if($value['rating'] == 5) echo 'checked' ?>/>
+                            <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                        
+                            <input type="radio" id="star4" name="rating<?php echo $value['id']?>" value="4" <?php if($value['rating'] == 4) echo 'checked' ?>/>
+                            <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                        
+                            <input type="radio" id="star3" name="rating<?php echo $value['id']?>" value="3" <?php if($value['rating'] == 3) echo 'checked' ?>/>
+                            <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                        
+                            <input type="radio" id="star2" name="rating<?php echo $value['id']?>" value="2" <?php if($value['rating'] == 2) echo 'checked' ?>/>
+                            <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                        
+                            <input type="radio" id="star1" name="rating<?php echo $value['id']?>" value="1" <?php if($value['rating'] == 1) echo 'checked' ?>/>
+                            <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                        </div>
+                    </h6>
+                    <br />
+                    <p class="card-text rating-contents"><?php echo $value['content'] ?></p>
+                </div>
+            </div>
+            <?php
+        }
+
+        ?>
+    </div>
 </main>
 <script src="<?php echo _WEB_ROOT ?>/public/assets/clients/js/slide-show.js"></script>
+<script>
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+    })();
+    
+    function calcRate(r) {
+        const f = ~~r,
+        id = 'star' + f + (r % f ? 'half' : '')
+        id && (document.getElementById(id).checked = !0)
+    }
+</script>
