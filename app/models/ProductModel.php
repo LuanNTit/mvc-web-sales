@@ -47,5 +47,20 @@ class ProductModel extends Model {
         ];
         return $data;
     }
+
+    public function addRating($rating) {
+        $sql = "INSERT INTO ratings (rating, user_name, product_id, content) VALUES (:rating, :user_name, :product_id, :content)";
+        return $this->db->insert('ratings', array(
+            'rating' => $rating['rating'],
+            'user_name' => $rating['user_name'],
+            'product_id' => $rating['product_id'],
+            'content' => $rating['content']
+        ));
+    }
+
+    public function getRatings($id) {
+        $data = $this->db->query("SELECT * FROM ratings WHERE product_id = $id")->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
+    }
 }
 ?>
