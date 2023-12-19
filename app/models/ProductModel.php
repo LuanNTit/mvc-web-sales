@@ -1,32 +1,14 @@
 <?php
 class ProductModel extends Model {
+    function TableFill()
+    {
+        return 'products';
+    }
+
+    function fieldFill() {
+        return '*';
+    }
     public function getProductLists() {
-        // return [
-        //     [ 
-        //         "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham1.png",
-        //         "name" => "Áo gucci",
-        //         "price" => 53,
-        //         "root-price" => 100
-        //     ],
-        //     [
-        //         "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham2.png",
-        //         "name" => "Áo khoác gió",
-        //         "price" => 75.55,
-        //         "root-price" => 150
-        //     ],
-        //     [
-        //         "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham3.png",
-        //         "name" => "Áo thun rộng",
-        //         "price" => 75.55,
-        //         "root-price" => 150
-        //     ],
-        //     [
-        //         "url_img" => _WEB_ROOT."/public/assets/clients/images/sanpham4.png",
-        //         "name" => "áo thung cổ tròn",
-        //         "price" => 75.55,
-        //         "root-price" => 150
-        //     ]
-        // ];
         $data = $this->db->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
         return $data;
     }
