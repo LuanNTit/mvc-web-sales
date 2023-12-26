@@ -1,6 +1,8 @@
 <main class="main-page">
     <div class="container">
         <div class="col-md-10 mx-auto col-lg-5 py-4">
+            <h1 class="text-center">Đăng ký</h1>
+            <h4 class="text-center text-danger"><?php echo $this->data['error'] ?></h4>
             <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
